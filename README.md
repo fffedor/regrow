@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ReGrow
+
+**Grow through repetition** — a minimalist habit and exercise tracker that helps you build consistency through daily goal tracking and visual progress feedback.
+
+## Features
+
+- **Reps & Time Goals** — track repetition-based exercises or time-based activities
+- **Session Tracking** — full-screen focused session view with live counter, timer, and optional auto-count
+- **Activity Calendar** — monthly view with color-coded completion status
+- **Progress Visualization** — progress bars, completion counts, and relative timestamps
+- **Dark/Light Mode** — automatic system preference detection with manual toggle
+- **Haptic Feedback** — vibration on mobile devices during sessions
+- **Offline & Private** — all data stored in localStorage, no backend or accounts required
 
 ## Getting Started
 
-First, run the development server:
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build static export to `/out` |
+| `npm run lint` | Run ESLint |
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open [http://localhost:3000/regrow](http://localhost:3000/regrow) in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desktop App (Tauri)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ReGrow can run as a native desktop app via [Tauri v2](https://v2.tauri.app/).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- [Rust](https://rustup.rs/) toolchain
+- macOS: Xcode Command Line Tools
+- Windows: [WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/), Visual Studio C++ Build Tools
+- Linux: `libwebkit2gtk-4.1-dev`, `libappindicator3-dev`, `librsvg2-dev`, `patchelf`
 
-To learn more about Next.js, take a look at the following resources:
+### Commands
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Command | Description |
+|---------|-------------|
+| `npm run tauri:dev` | Run desktop app in dev mode with hot reload |
+| `npm run tauri:build` | Build release binary (`.dmg`, `.msi`, `.deb`/`.AppImage`) |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The first run downloads and compiles Rust dependencies — this takes a few minutes.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT No Commercial License

@@ -23,6 +23,9 @@
 # misc
 .DS_Store
 *.pem
+.idea
+.serena
+.claude
 
 # debug
 npm-debug.log*
@@ -39,3 +42,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# tauri
+src-tauri/target/
