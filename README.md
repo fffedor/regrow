@@ -16,6 +16,10 @@
 - **Haptic Feedback** — vibration on mobile devices during sessions
 - **Offline & Private** — all data stored in localStorage, no backend or accounts required
 
+## Try It
+
+**[fffedor.github.io/regrow](https://fffedor.github.io/regrow/)** — open the app in your browser, no install needed.
+
 ## Getting Started
 
 | Command | Description |
