@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="regrow.png" alt="ReGrow" width="128" />
+</p>
+
 # ReGrow
 
 **Grow through repetition** — a minimalist habit and exercise tracker that helps you build consistency through daily goal tracking and visual progress feedback.
